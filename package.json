@@ -1,9 +1,9 @@
 {
-  "name": "html-webpack-plugin",
+  "name": "html-webpack-plugin-for-split",
   "version": "3.1.0",
   "license": "MIT",
-  "description": "Simplifies creation of HTML files to serve your webpack bundles",
-  "author": "Charles Blaxland <charles.blaxland@gmail.com> (https://github.com/ampedandwired)",
+  "description": "Simplifies creation of HTML files to serve your webpack bundles. This version is to resolve Add entry config to get chunks of entrypoint.",
+  "author": "zhanfang",
   "main": "index.js",
   "files": [
     "lib/",
@@ -63,9 +63,9 @@
     "html",
     "html-webpack-plugin"
   ],
-  "bugs": "https://github.com/jantimon/html-webpack-plugin/issues",
-  "homepage": "https://github.com/jantimon/html-webpack-plugin",
-  "repository": "https://github.com/jantimon/html-webpack-plugin.git",
+  "bugs": "https://github.com/zhanfang/html-webpack-plugin/issues",
+  "homepage": "https://github.com/zhanfang/html-webpack-plugin",
+  "repository": "https://github.com/zhanfang/html-webpack-plugin.git",
   "engines": {
     "node": ">=6.11.5"
   },
