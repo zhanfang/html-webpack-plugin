@@ -109,7 +109,8 @@ class HtmlWebpackPlugin {
       const allChunks = compilation.getStats().toJson(chunkOnlyConfig).chunks;
       // Filter chunks (options.chunks and options.excludeCHunks)
       let tempChunks = compilation.entrypoints.get(self.options.entry).chunks.map(c => c.name);
-
+      tempChunks = (self.options.chunks === 'all') ? tempChunks : self.options.chunks;
+      
       let chunks = self.filterChunks(allChunks, tempChunks, self.options.excludeChunks);
       // Sort chunks
       chunks = self.sortChunks(chunks, self.options.chunksSortMode, compilation);
